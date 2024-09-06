@@ -5,7 +5,7 @@ This is a simple image management platform that allows users to upload image met
 
 ## Common Steps
 
-1. Extract the project folder
+1. Clone the git repository
 
 2. Install [Mysql 8](https://hackernoon.com/how-to-install-mysql-8-on-macos-using-homebrew). Run it on port 3306
 
