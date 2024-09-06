@@ -6,13 +6,11 @@ import com.pixsee.imageanalysis.entity.ImageMetadata;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;
-import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ImageMetadataMapperTest {
 
-    // Helper method to create an ImageMetadata entity
     private ImageMetadata createImageMetadata(Long id) {
         ImageMetadata imageMetadata = new ImageMetadata();
         imageMetadata.setId(id);
@@ -26,7 +24,6 @@ class ImageMetadataMapperTest {
         return imageMetadata;
     }
 
-    // Helper method to create an ImageMetadataRequestDTO
     private ImageMetadataRequestDTO createImageMetadataRequestDTO() {
         ImageMetadataRequestDTO requestDTO = new ImageMetadataRequestDTO();
         requestDTO.setUserId(1L);
@@ -138,6 +135,6 @@ class ImageMetadataMapperTest {
 
         // Verify the entity is updated with null values
         assertNull(existingEntity.getFileSize());
-        assertEquals("image.jpg", existingEntity.getOriginalFilename());  // Other fields remain unchanged
+        assertEquals("image.jpg", existingEntity.getOriginalFilename());
     }
 }
